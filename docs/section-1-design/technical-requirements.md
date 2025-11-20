@@ -323,4 +323,3 @@ E-commerce site:
 5. Implement health checks and auto-healing for reliability
 6. Design for failure with graceful degradation
 
-**Next Chapter**: [1.3 Network, Storage, and Compute Design →](./resource-design)

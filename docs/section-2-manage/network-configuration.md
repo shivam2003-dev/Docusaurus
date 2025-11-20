@@ -441,4 +441,3 @@ gcloud projects add-iam-policy-binding HOST_PROJECT_ID \
 4. Use **Private DNS zones** for internal resolution
 5. **Shared VPC** for centralized network management
 
-**Next Chapter**: [2.2 Storage Configuration →](./storage-configuration)
