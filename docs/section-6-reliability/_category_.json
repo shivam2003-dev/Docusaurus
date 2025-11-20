@@ -1,0 +1,8 @@
+{
+    "label": "6. Solution Reliability",
+    "position": 7,
+    "link": {
+        "type": "generated-index",
+        "description": "Ensure solution and operations reliability through monitoring, logging, and deployment best practices."
+    }
+}
