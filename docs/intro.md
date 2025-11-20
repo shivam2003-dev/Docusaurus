@@ -20,12 +20,12 @@ The Professional Cloud Architect exam assesses your ability to:
 
 This course is structured around the official exam guide sections:
 
-1. **[Designing and Planning a Cloud Solution Architecture](./section-1-design)**
-2. **[Managing and Provisioning a Solution Infrastructure](./section-2-manage)**
-3. **[Designing for Security and Compliance](./section-3-security)**
-4. **[Analyzing and Optimizing Technical and Business Processes](./section-4-optimize)**
-5. **[Managing Implementation](./section-5-implementation)**
-6. **[Ensuring Solution and Operations Reliability](./section-6-reliability)**
+1. **[Designing and Planning a Cloud Solution Architecture](./section-1-design/overview)**
+2. **[Managing and Provisioning a Solution Infrastructure](./section-2-manage/overview)**
+3. **[Designing for Security and Compliance](./section-3-security/overview)**
+4. **[Analyzing and Optimizing Technical and Business Processes](./section-4-optimize/overview)**
+5. **[Managing Implementation](./section-5-implementation/overview)**
+6. **[Ensuring Solution and Operations Reliability](./section-6-reliability/overview)**
 
 ## Case Studies
 
