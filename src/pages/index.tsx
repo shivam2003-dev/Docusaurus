@@ -1,15 +1,14 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -21,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Start Learning →
           </Link>
         </div>
       </div>
@@ -30,14 +29,43 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Comprehensive GCP Professional Cloud Architect Exam Preparation">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <section className={styles.features}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--4">
+                <div className="text--center padding-horiz--md">
+                  <h3>📚 Comprehensive Coverage</h3>
+                  <p>
+                    All 6 exam sections covered in detail with real-world scenarios and best practices.
+                  </p>
+                </div>
+              </div>
+              <div className="col col--4">
+                <div className="text--center padding-horiz--md">
+                  <h3>💡 Practice Questions</h3>
+                  <p>
+                    50+ scenario-based questions per section to test your knowledge and exam readiness.
+                  </p>
+                </div>
+              </div>
+              <div className="col col--4">
+                <div className="text--center padding-horiz--md">
+                  <h3>🎯 Case Studies</h3>
+                  <p>
+                    Deep dives into all official case studies: EHR Healthcare, HRL, Mountkirk Games, and TerramEarth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
