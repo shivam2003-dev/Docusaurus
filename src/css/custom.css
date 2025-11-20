@@ -1,0 +1,89 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Google Cloud Blue Palette */
+:root {
+  --ifm-color-primary: #4285F4;
+  --ifm-color-primary-dark: #3b78dc;
+  --ifm-color-primary-darker: #3871d0;
+  --ifm-color-primary-darkest: #2e5da8;
+  --ifm-color-primary-light: #5691f5;
+  --ifm-color-primary-lighter: #6097f6;
+  --ifm-color-primary-lightest: #7eaaf7;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Custom Fonts */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* Dark Mode Palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #6097f6;
+  --ifm-color-primary-dark: #4285F4;
+  --ifm-color-primary-darker: #3b78dc;
+  --ifm-color-primary-darkest: #3871d0;
+  --ifm-color-primary-light: #7eaaf7;
+  --ifm-color-primary-lighter: #9cbff9;
+  --ifm-color-primary-lightest: #baddfb;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #0b0f19; /* Deep dark blue/black */
+  --ifm-navbar-background-color: rgba(11, 15, 25, 0.85);
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Hero Section Styling */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+}
+
+.hero__title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styling */
+.menu__link {
+  border-radius: 8px;
+}
+
+.menu__link--active {
+  background: linear-gradient(90deg, rgba(66, 133, 244, 0.1) 0%, rgba(66, 133, 244, 0.05) 100%);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Button Styling */
+.button--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+  transition: all 0.2s ease;
+}
+
+.button--primary:hover {
+  box-shadow: 0 6px 16px rgba(66, 133, 244, 0.4);
+  transform: translateY(-1px);
+}
