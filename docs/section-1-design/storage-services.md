@@ -34,10 +34,10 @@ Master Google Cloud storage options and learn when to use each service for diffe
 
 | Class | Access Frequency | Min Storage Duration | Retrieval Cost | Use Case |
 |-------|-----------------|---------------------|----------------|----------|
-| **Standard** | Frequent (>1/month) | None | None | Hot data, websites, streaming |
+| **Standard** | Frequent (&gt;1/month) | None | None | Hot data, websites, streaming |
 | **Nearline** | ~1/month | 30 days | $0.01/GB | Backups, disaster recovery |
 | **Coldline** | ~1/quarter | 90 days | $0.02/GB | Long-term backups, compliance |
-| **Archive** | <1/year | 365 days | $0.05/GB | Regulatory archives, rarely accessed |
+| **Archive** | &lt;1/year | 365 days | $0.05/GB | Regulatory archives, rarely accessed |
 
 ### Lifecycle Management
 
@@ -162,7 +162,7 @@ gcloud spanner databases create my-db \
 **Best For**:
 - Time-series data (IoT sensors, stock prices)
 - High-throughput analytics
-- Low-latency access (< 10ms)
+- Low-latency access (&lt; 10ms)
 - Flat data (no complex joins)
 
 **Use Cases**:
@@ -334,7 +334,7 @@ gcloud redis instances create my-cache \
 | Requirement | Solution |
 |-------------|----------|
 | Object storage (images, videos) | **Cloud Storage** |
-| Relational, regional, < 64 TB | **Cloud SQL** |
+| Relational, regional, &lt; 64 TB | **Cloud SQL** |
 | Relational, global, strong consistency | **Cloud Spanner** |
 | Time-series, high throughput, low latency | **Bigtable** |
 | Mobile/web app, real-time sync | **Firestore** |
